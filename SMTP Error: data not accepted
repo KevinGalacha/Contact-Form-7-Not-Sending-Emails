@@ -1,0 +1,56 @@
+Detailed Error log
+Versions:
+WordPress: 5.8
+WordPress MS: No
+PHP: 7.4.22
+WP Mail SMTP: 3.0.3
+
+Params:
+Mailer: smtp
+Constants: No
+ErrorInfo: SMTP Error: data not accepted.SMTP server error: DATA END command failed Detail: [95.211.209.81      18] Our system has detected that this message is
+likely suspicious due to the very low reputation of the sending IP
+address. To best protect our users from spam, the message has been
+blocked. Please visit
+ https://support.google.com/mail/answer/188131 for more information. y30si11926988edi.44 - gsmtp
+ SMTP code: 550 Additional SMTP info: 5.7.1
+Host: aspmx.l.google.com
+Port: 25
+SMTPSecure: string(0) ""
+SMTPAutoTLS: bool(false)
+SMTPAuth: bool(false)
+
+Server:
+OpenSSL: OpenSSL 1.0.2k  26 Jan 2017
+
+Debug:
+Email Source: Contact Form 7
+Mailer: Other SMTP
+SMTP Error: data not accepted.
+Email Source: WP Mail SMTP
+Mailer: Other SMTP
+SMTP Error: data not accepted.
+
+SMTP Debug:
+
+2021-08-16 18:03:53 Connection: opening to aspmx.l.google.com:25, timeout=300, options=array()
+
+2021-08-16 18:03:53 Connection: opened
+
+2021-08-16 18:03:53 SERVER -> CLIENT: 220 mx.google.com ESMTP y30si11926988edi.44 - gsmtp
+
+2021-08-16 18:03:53 CLIENT -> SERVER: EHLO www.xxx.xx
+
+2021-08-16 18:03:53 SERVER -> CLIENT: 250-mx.google.com at your service, [xx.xx.xx.xx]250-SIZE 157286400250-8BITMIME250-STARTTLS250-ENHANCEDSTATUSCODES250-PIPELINING250-CHUNKING250 SMTPUTF8
+
+2021-08-16 18:03:53 CLIENT -> SERVER: MAIL FROM:<admin@xxx.xx>
+
+2021-08-16 18:03:53 SERVER -> CLIENT: 250 2.1.0 OK y30si11926988edi.44 - gsmtp
+
+2021-08-16 18:03:53 CLIENT -> SERVER: RCPT TO:<yyyy@gmail.com>
+
+2021-08-16 18:03:54 SERVER -> CLIENT: 250 2.1.5 OK y30si11926988edi.44 - gsmtp
+
+2021-08-16 18:03:54 CLIENT -> SERVER: DATA
+
+2021-08-16 18:03:54 SERVER -> CLIENT: 354  Go ahead y30si11926988edi.44 - gsmtp
